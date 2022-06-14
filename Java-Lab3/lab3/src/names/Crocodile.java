@@ -24,5 +24,7 @@ public class Crocodile extends Reptile {
   public String showInfo() {
     return "🐢Crocodile [Height:" + getheight() + ", Weight:" + getwight() +", animalType:" + animalType() + ", bloodType:" + bloodType() + ", drySkin: " + isDrySkin()+ ", backbone " + isBackbone() + ", hardSHell: " + hardSHell + "]";
   }
+
+//改行のために"\n"を打つのもアリ
   
 }
