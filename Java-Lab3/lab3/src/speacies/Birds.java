@@ -1,4 +1,4 @@
-package animals.speacies;
+package speacies;
 
 import animals.Animal;
 
@@ -22,15 +22,16 @@ public class Birds extends Animal {
   public boolean isFeathers() {
     return feathers;
   }
-
-
   public boolean isCanFly() {
     return canFly;
   }
 
+  
+
 @Override
 public String showInfo() {
-  return "ここにgetterのretunした値が返ってくる。こんな感じで" + getheight();
+  // return "ここにgetterのretunした値が返ってくる。こんな感じで" + getwight();
+  return "🦢Birds[feathers= " + feathers + "canFly= " + canFly + "]";
 }
 
   

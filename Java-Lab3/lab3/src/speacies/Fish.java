@@ -1,4 +1,4 @@
-package animals.speacies;
+package speacies;
 
 import animals.Animal;
 
@@ -11,5 +11,24 @@ public class Fish extends Animal
 
   public Fish() {
     super();   //animalからの要素
+    this.liveInWater = true;
+    this.gills = true;
   }
+
+
+  public boolean isLiveInWater() {
+    return liveInWater;
+  }
+
+
+  public boolean isGills() {
+    return gills;
+  }
+
+  @Override 
+  public String showInfo() {
+    return "🐠Fishes[liveInWater= " + liveInWater + "gills= " + gills + "]";
+  }
+
+
 }

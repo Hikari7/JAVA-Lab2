@@ -15,12 +15,12 @@ public class Animal {
   }
   
   //parametaored constrctor(引数つき)
-  public Animal(int height, int weight, String animalType, String bloodType) {
-    this.height = height;//key()
-    this.weight = weight;
-    this.animalType = animalType;
-    this.bloodType = bloodType;
-  }
+  // public Animal(int height, int weight, String animalType, String bloodType) {
+  //   this.height = height;//key()
+  //   this.weight = weight;
+  //   this.animalType = animalType;
+  //   this.bloodType = bloodType;
+  // }
 
 
   //getter、setterを作る（JSのオブジェクトの.みたいな役割）
@@ -39,10 +39,31 @@ public String bloodType() {
 }
  
 
-public String showInfo() {
-  return "高さ =" + height;
+
+public void setHeight(int height) {
+  this.height = height;
 }
 
-  
+public void setWeight(int weight) {
+  this.weight = weight;
+}
+
+public void setAnimalType(String animalType) {
+  this.animalType = animalType;
+}
+
+public void setBloodType(String bloodType) {
+  this.bloodType = bloodType;
+}
+
+// public String showInfo() {
+//   return "高さ =" + height;
+// }
+
+public String showInfo() {
+  return "💖Here is the all animal's info💖 ";
+}
+
+
 }
 
