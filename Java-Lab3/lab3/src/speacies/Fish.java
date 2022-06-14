@@ -27,8 +27,6 @@ public class Fish extends Animal
 
   @Override 
   public String showInfo() {
-    return "🐠Fishes[liveInWater= " + liveInWater + "gills= " + gills + "]";
+    return "🐠Fishes [Height: " + getheight() + ", Weight:" + getwight() +", animalType:" + animalType() + ", bloodType:" + bloodType() + ", liveInWater: " + liveInWater + ", gills: " + gills + "]";
   }
-
-
 }

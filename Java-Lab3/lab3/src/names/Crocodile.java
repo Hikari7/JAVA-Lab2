@@ -7,6 +7,12 @@ public class Crocodile extends Reptile {
   private boolean hardSHell;
   private boolean showinfo;
 
+  public Crocodile() {
+    super();
+    this.hardSHell = true;
+    this.showinfo = true;
+  }
+
   public boolean isHardSHell() {
     return hardSHell;
   }
@@ -16,7 +22,7 @@ public class Crocodile extends Reptile {
 
   @Override
   public String showInfo() {
-    return "🐢Crocodile [hardSHell =" + hardSHell + "]";
+    return "🐢Crocodile [Height:" + getheight() + ", Weight:" + getwight() +", animalType:" + animalType() + ", bloodType:" + bloodType() + ", drySkin: " + isDrySkin()+ ", backbone " + isBackbone() + ", hardSHell: " + hardSHell + "]";
   }
   
 }

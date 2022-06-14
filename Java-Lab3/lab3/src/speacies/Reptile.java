@@ -34,10 +34,8 @@ public class Reptile extends Animal {
   @Override
 public String showInfo() {
   // return "ここにgetterのretunした値が返ってくる。こんな感じで" + getwight();
-  return "🦎Reptile [drySkin= " + drySkin + "backbone= " + backbone + "softEggs= " + softEggs + "]";
+  return "🦎Reptile [Height:" + getheight() + ", Weight:" + getwight() +", animalType:" + animalType() + ", bloodType: " + bloodType() + ", drySkin: " + drySkin + ", backbone: " + backbone + ", softEggs: " + softEggs + "]";
+  
 }
-  
-  
-
   
 }

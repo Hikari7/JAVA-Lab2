@@ -7,11 +7,13 @@ public class Animal {
   private String animalType;
   private String bloodType;
 
-  public Animal() {
+  public Animal() {//メソッド
     this.height = 160;
     this.weight = 50;
-    this.animalType = "mammals";
-    this.bloodType = "O";
+    this.animalType = "lovely";
+    this.bloodType = "smelly";
+  
+    //メソッド内からクラスのフィールドにアクセスするには「this」という特殊なキーワードを使う
   }
   
   //parametaored constrctor(引数つき)
@@ -38,8 +40,6 @@ public String bloodType() {
  return bloodType;
 }
  
-
-
 public void setHeight(int height) {
   this.height = height;
 }
@@ -56,12 +56,8 @@ public void setBloodType(String bloodType) {
   this.bloodType = bloodType;
 }
 
-// public String showInfo() {
-//   return "高さ =" + height;
-// }
-
 public String showInfo() {
-  return "💖Here is the all animal's info💖 ";
+  return "💖Here is the all animal's info💖 " + "Height: " + height + " ,Weight: " + weight + " ,animalType: " + animalType + " ,bloodType: " + bloodType;
 }
 
 

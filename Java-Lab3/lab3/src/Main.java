@@ -10,8 +10,11 @@ public class Main {
   
 public static void main(String[] args) {
   //default counstructor 
-  Animal  animal = new Animal();  
+  //classの変数(フィールド)
+  Animal  animal = new Animal();  //インスタンス
+  //実際にメモリ領域にデータを置くには、配列と同じように「new」してあげる必要がある
   //Animalコンストラクターから実際にメソッドを作ったよ
+ //newとしてあげると領域をメモリ上に確保してくれて、tom にはその領域の番地が格納される->インスタンス化
  Birds birds = new  Birds();
  Reptile reptile = new  Reptile();
  Fish fish = new  Fish();

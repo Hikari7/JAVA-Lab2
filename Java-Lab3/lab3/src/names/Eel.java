@@ -2,7 +2,7 @@ package names;
 
 import speacies.Fish;
 
-public class Eel extends Fish {
+public class Eel extends Fish {//extendsを使うと親クラスを使うことができる(inheritate)
   private boolean elecrticCharge;
   private boolean showinfo;
 
@@ -22,7 +22,7 @@ public class Eel extends Fish {
   @Override
   public String showInfo() {
     // return "ここにgetterのretunした値が返ってくる。こんな感じで" + getwight();
-    return "🍚Eel[elecrticCharge= " + elecrticCharge + "]";
+    return "🍚Eel[ [Height:" + getheight() + ", Weight:" + getwight() +", animalType:" + animalType() + ", bloodType: " + bloodType() + ", liveInWater: " + isLiveInWater()+  ", gills: " + isGills()+  ", elecrticCharge: " + elecrticCharge + "]";
   }
 
   
