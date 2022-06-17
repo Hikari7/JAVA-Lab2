@@ -33,6 +33,8 @@ System.out.println(eagle.showInfo());
 
 }
 
+
+
 }
 
 //parametaored constrctor(引数つき)
