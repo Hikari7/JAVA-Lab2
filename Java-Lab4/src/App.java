@@ -4,6 +4,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         //計算結果を表示させるためのコード
 
+        //instanciate -> now I can use some functions from Calculator class
         Scanner scanner = new Scanner(System.in);
         Calculator c1 = new Calculator();
         //caluculator c1 an instance of the class calculator set equal to a bew calculator class = クラスで作ったものをインスタンス化して、再利用する

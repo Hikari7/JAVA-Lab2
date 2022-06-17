@@ -23,20 +23,6 @@ public class Calculator{
   }
 
 
-//メソッド作成？
-// private double add;
-// public Calculator() {   
-//   add = (num1 + num2);
-// }
-//   public double addition() {
-//     return add;
-//   }
-
-
-//answer = firstnum + secondnum;    
-//System.out.printIn(answer);
-
-
   }
 
     
