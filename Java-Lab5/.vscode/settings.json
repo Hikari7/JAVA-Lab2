@@ -1,5 +1,5 @@
 {
-  "java.project.sourcePaths": ["Java-Lab2/src", "Java-Lab4/src"],
+  "java.project.sourcePaths": ["src"],
   "java.project.referencedLibraries": [
     "lib/**/*.jar",
     "/Users/hikobe/Desktop/javafx-sdk-18.0.1/**/*.jar"

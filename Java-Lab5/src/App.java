@@ -30,7 +30,7 @@ public class App {
         for(int i = 0; i<10; i++) 
         randomNumList.add(getRandomNumber(50,1));
 
-        // System.out.println("Generated random numbers are:" + randomNumList);
+        System.out.println("Generated random numbers are:" + randomNumList);
         System.out.println("Please enter an integer: ");
         Integer x = input.nextInt();
 
