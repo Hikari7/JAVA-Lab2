@@ -12,7 +12,53 @@ import javax.swing.plaf.synth.SynthSplitPaneUI;
 // If the value is not in the ArrayList, print a message that the number is not in the list
 
 
+class Car implements Comparable<Car> {
+    private String make;
+    private String model;
+    private Integer year;
+    public Car(String make, String model, Integer year) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+    }
+    public String getMake() {
+        return make;
+    }
+    public void setMake(String make) {
+        this.make = make;
+    }
+    public String getModel() {
+        return model;
+    }
+    public void setModel(String model) {
+        this.model = model;
+    }
+    public Integer getYear() {
+        return year;
+    }
+    public void setYear(Integer year) {
+        this.year = year;
+    }
 
+    @Override
+    public String toString() {
+        return "Car [make=" + make + ", model=" + model + ", year=" + year + "]";
+    }
+    @Override
+    public int compareTo(Car o) {
+       if(year == o.year) {
+        return 0;
+       } else if (year > o.year) {
+        return 1;
+       } else {
+        return -1;
+       }
+    }
+
+    
+
+    
+}
 
 public class App {
 
@@ -61,10 +107,35 @@ public class App {
         System.out.println("Copy: " + randomCopyList);
 
     }
+
+    public static void question3() {
+        ArrayList<Car> cars = new ArrayList<>();
+
+        cars.add(new Car("Jeep", "Wrangler", 1986));
+        cars.add(new Car("Honda", "Civic", 1975));
+        cars.add(new Car("Toyota", "Camry", 1982));
+
+        for(Car car: cars) {
+            System.out.println("Element: " +car);
+        }
+
+        System.out.println("---------");
+
+        // cars.sort(null);
+        cars.sort(null);
+
+        for(Car car: cars) {
+            System.out.println("Element: " +car);
+        }
+
+        
+    }
     // public static void question3() {}
     public static void main(String[] args) throws Exception {
         // question1();
-        question2();
-        // question3();
+        // question2();
+        question3();
     }
+
+    
 }
