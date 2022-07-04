@@ -42,11 +42,29 @@ public class App {
         input.close();
     }
 
-    // public static void question2() {}
+    public static void question2() {
+        ArrayList<Integer> randomNumList = new ArrayList<>();
+        for(int i = 0; i<10; i++) 
+        randomNumList.add(getRandomNumber(50,1));
+
+        ArrayList<Integer> randomCopyList = new ArrayList<>();
+        randomCopyList.addAll(randomNumList);
+
+        System.out.println("----Before setting----");
+        System.out.println("Original" + randomNumList);
+        System.out.println("Copy: " + randomCopyList);
+
+        randomNumList.set(randomNumList.size() - 1, -5);
+
+        System.out.println("----After setting----");
+        System.out.println("Original" + randomNumList);
+        System.out.println("Copy: " + randomCopyList);
+
+    }
     // public static void question3() {}
     public static void main(String[] args) throws Exception {
-        question1();
-        // question2();
+        // question1();
+        question2();
         // question3();
     }
 }
